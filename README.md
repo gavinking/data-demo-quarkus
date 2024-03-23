@@ -1,8 +1,6 @@
-# data-demo-quarkus
+# Demo app for Hibernate Data Repositories on Quarkus
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
-
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+This project uses Quarkus, the Supersonic Subatomic Java Framework, and Hibernate's implementation of Jakarta Data.
 
 ## Running the application in dev mode
 
