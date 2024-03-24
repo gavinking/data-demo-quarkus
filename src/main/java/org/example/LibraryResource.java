@@ -35,9 +35,14 @@ public class LibraryResource {
 
     @POST
     @Path("/delete/{isbn}")
-//    @Transactional
     public String delete(@PathParam String isbn) {
         library.delete(isbn);
         return "Deleted " + isbn;
+    }
+
+    @GET
+    @Path("/books")
+    public  List<Book> allBooks() {
+        return library.books();
     }
 }

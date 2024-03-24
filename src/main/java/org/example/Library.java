@@ -3,6 +3,7 @@ package org.example;
 import jakarta.data.repository.Delete;
 import jakarta.data.repository.Find;
 import jakarta.data.repository.Insert;
+import jakarta.data.repository.Query;
 import jakarta.data.repository.Repository;
 import jakarta.transaction.Transactional;
 import org.hibernate.annotations.processing.Pattern;
@@ -24,4 +25,7 @@ public interface Library {
 
     @Delete
     void delete(String isbn);
+
+    @Query("order by title desc")
+    List<Book> books();
 }
