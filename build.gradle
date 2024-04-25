@@ -16,8 +16,8 @@ dependencies {
     implementation 'io.quarkus:quarkus-arc'
     implementation 'io.quarkus:quarkus-resteasy-jackson'
     implementation 'jakarta.data:jakarta.data-api:1.0.0-RC1'
-    implementation 'org.hibernate.orm:hibernate-core:6.6.0-SNAPSHOT'
-    annotationProcessor 'org.hibernate.orm:hibernate-jpamodelgen:6.6.0-SNAPSHOT'
+    implementation 'org.hibernate.orm:hibernate-core:6.6.0.Alpha1'
+    annotationProcessor 'org.hibernate.orm:hibernate-jpamodelgen:6.6.0.Alpha1'
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.rest-assured:rest-assured'
 }
