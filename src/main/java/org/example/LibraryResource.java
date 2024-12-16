@@ -2,6 +2,7 @@ package org.example;
 
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
+import jakarta.ws.rs.NotFoundException;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import org.jboss.resteasy.annotations.jaxrs.PathParam;
@@ -16,7 +17,8 @@ public class LibraryResource {
     @GET
     @Path("/book/{isbn}")
     public Book byIsbn(@PathParam String isbn) {
-        return library.byIsbn(isbn).orElseThrow();
+        return library.byIsbn(isbn)
+                .orElseThrow(() -> new NotFoundException(isbn));
     }
 
     @GET
@@ -43,6 +45,6 @@ public class LibraryResource {
     @GET
     @Path("/books")
     public  List<Book> allBooks() {
-        return library.books();
+        return library.allBooks();
     }
 }
