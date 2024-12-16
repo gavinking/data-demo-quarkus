@@ -2,6 +2,8 @@
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework, and Hibernate's implementation of Jakarta Data.
 
+This is the Gradle version. There's also a [Maven version](https://github.com/gavinking/data-demo-quarkus-mvn). 
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
