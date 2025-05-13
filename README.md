@@ -14,7 +14,7 @@ This is the Gradle version. There's also a [Maven version](https://github.com/ga
 ## Dependencies:
 
 - Quarkus 3.15 or above, with RESTEasy Classic and Jackson
-- Jakarta Data 1.0
+- Jakarta Data 1.0.1
 - Hibernate Metamodel Generator 6.6
 
 ### Running the application in dev mode
