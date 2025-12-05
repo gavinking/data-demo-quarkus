@@ -13,11 +13,11 @@ This is the Gradle version. There's also a [Maven version](https://github.com/ga
 
 ## Dependencies:
 
-- Quarkus 3.15 or above, with RESTEasy Classic and Jackson
+- Quarkus 3.30, with RESTEasy Classic and Jackson
 - Jakarta Data 1.0.1
-- Hibernate Metamodel Generator 6.6
+- Hibernate Processor 7.1
 
-### Running the application in dev mode
+## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
 
