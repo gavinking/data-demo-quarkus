@@ -14,7 +14,6 @@ import java.time.LocalDate;
 import java.util.Set;
 
 import static jakarta.persistence.EnumType.STRING;
-import static jakarta.persistence.FetchType.LAZY;
 
 @Entity
 public class Book {
