@@ -11,7 +11,9 @@ import org.hibernate.annotations.processing.Pattern;
 import java.util.List;
 import java.util.Optional;
 
-@Transactional @Repository
+@Transactional @Repository(
+        // name of the persistence unit
+        dataStore = "Library")
 public interface Library {
 
     @Find
